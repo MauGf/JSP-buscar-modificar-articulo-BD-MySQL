@@ -22,7 +22,7 @@
     <body>
         <%
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/produccion", "root", "practicaphp");
+            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/produccion", "root", "");
             Statement s = conexion.createStatement();
             request.setCharacterEncoding("UTF-8");
             ResultSet listado = s.executeQuery("SELECT * FROM articulo");
